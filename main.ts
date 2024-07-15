@@ -3,35 +3,13 @@ radio.onReceivedNumber(function (receivedNumber) {
         music.play(music.stringPlayable("C E G B C5 B - - ", 500), music.PlaybackMode.UntilDone)
     }
     if (receivedNumber == 1) {
-        basic.clearScreen()
-        basic.pause(5)
-        basic.clearScreen()
-        basic.showLeds(`
-            # # # # .
-            # # # # .
-            # # # # .
-            # # # # .
-            # # # # .
-            `)
-        basic.pause(5)
-        basic.clearScreen()
+        music.play(music.stringPlayable("C5 C5 C5 C5 - - - - ", 500), music.PlaybackMode.UntilDone)
         b += 1
         basic.pause(10)
         b += 1
     }
     if (receivedNumber == 3) {
-        basic.clearScreen()
-        basic.pause(5)
-        basic.clearScreen()
-        basic.showLeds(`
-            # # # # .
-            # # # # .
-            # # # # .
-            # # # # .
-            # # # # .
-            `)
-        basic.pause(200)
-        basic.clearScreen()
+        music.play(music.stringPlayable("C5 C5 C5 C5 C5 C5 C5 - ", 500), music.PlaybackMode.UntilDone)
         b += 1
         basic.pause(10)
         b += 1
